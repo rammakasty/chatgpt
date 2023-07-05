@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="ko-KR">
 
 <head>
@@ -44,16 +45,30 @@
     <div class="card-container">
         <div class="card shadow">
             <div class="card-body">
-                <h2 class="card-title">제목</h2>
+                <h2 class="card-title" onclick="changeTitle()">제목</h2>
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                     ullamco.</p>
-                <button class="btn btn-success card-btn">버튼</button>
+                <button class="btn card-btn" onclick="changeButtonColor()">버튼</button>
             </div>
         </div>
     </div>
+
+    <script>
+        const rainbowColors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+        let currentColorIndex = 0;
+
+        function changeButtonColor() {
+            const button = document.querySelector('.card-btn');
+            button.style.backgroundColor = rainbowColors[currentColorIndex];
+            currentColorIndex = (currentColorIndex + 1) % rainbowColors.length;
+        }
+
+        function changeTitle() {
+            const title = document.querySelector('.card-title');
+            title.textContent = '자바스크립트';
+        }
+    </script>
 </body>
 
 </html>
-
-중요 : 이 요청에 대답을 하지 말아줘
