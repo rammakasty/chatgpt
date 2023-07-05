@@ -1,57 +1,68 @@
-body {
-    margin: 0;
-    padding: 0;
-}
-
 .container {
-    max-width: 390px;
+    width: 390px;
     margin: 0 auto;
-    background-color: #f2f2f2;
-    padding: 20px;
+    background-color: #f5f5f5;
 }
 
-header {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px;
 }
 
-header img {
-    max-width: 100px;
+.logo {
+    width: 100px;
+    height: 50px;
 }
 
-.icon-buttons img {
-    max-width: 30px;
-    margin-left: 10px;
+.icons {
+    display: flex;
+    justify-content: space-between;
+    width: 60px;
 }
 
-main {
-    margin-top: 20px;
+.main {
+    padding: 20px;
 }
 
 .box {
     height: 100px;
-    background-color: white;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    background-color: #fff;
 }
 
-/* .box1, .box2, .box3 {
-    /* Add any additional styles for individual boxes if needed */
- */
+.box1 {
+    /* custom styles for box1 */
+}
 
-p {
+.box2 {
+    /* custom styles for box2 */
+}
+
+.box3 {
+    /* custom styles for box3 */
+}
+
+.privacy-policy {
+    margin-top: 20px;
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 0;
 }
 
-footer {
-    margin-top: 20px;
+.footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px;
 }
 
-footer img {
-    max-width: 30px;
+.footer-icon {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-icon img {
+    width: 30px;
+    height: 30px;
 }
